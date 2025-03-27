@@ -1,0 +1,116 @@
+/* Achievements Styles */
+.achievements-container {
+  margin: var(--space-lg) 0;
+}
+
+.achievements-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: var(--space-md);
+  position: relative;
+  display: inline-block;
+}
+
+.achievements-title:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.achievements-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--bg-color-alt);
+  border-radius: var(--border-radius);
+  padding: var(--space-md);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid var(--primary-color);
+}
+
+.achievement-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-icon {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color-1));
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-right: var(--space-md);
+  flex-shrink: 0;
+}
+
+.achievement-details h4 {
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: var(--space-xs);
+  font-size: 1.1rem;
+}
+
+.achievement-details p {
+  color: var(--text-color-light);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* Responsive styles for achievements section */
+@media screen and (max-width: 767px) {
+  .achievement-item {
+    flex-direction: row;
+    padding: var(--space-sm);
+  }
+
+  .achievement-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+    margin-right: var(--space-sm);
+  }
+
+  .achievement-details h4 {
+    font-size: 1rem;
+  }
+
+  .achievement-details p {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .achievement-item {
+    flex-direction: row;
+    padding: var(--space-sm);
+  }
+
+  .achievement-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+    margin-right: var(--space-sm);
+  }
+
+  .achievement-details h4 {
+    font-size: 0.95rem;
+  }
+
+  .achievement-details p {
+    font-size: 0.8rem;
+  }
+}

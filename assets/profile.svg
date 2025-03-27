@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <clipPath id="profile-circle">
+      <circle cx="200" cy="200" r="180" />
+    </clipPath>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8f9fa" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#e9ecef" stop-opacity="1"/>
+    </linearGradient>
+    <pattern id="image-pattern" patternUnits="userSpaceOnUse" width="400" height="400">
+      <image xlink:href="../attached_assets/171075ds8564892.jpg" width="400" height="400" preserveAspectRatio="xMidYMid slice" />
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="200" cy="200" r="190" fill="url(#bg-gradient)" />
+  
+  <!-- Border -->
+  <circle cx="200" cy="200" r="180" fill="none" stroke="#2e2eff" stroke-width="3" />
+  
+  <!-- Profile Image -->
+  <circle cx="200" cy="200" r="170" fill="url(#image-pattern)" clip-path="url(#profile-circle)" />
+  
+  <!-- Decorative elements -->
+  <circle cx="75" cy="75" r="15" fill="#1ab394" opacity="0.7" />
+  <circle cx="325" cy="75" r="15" fill="#2e2eff" opacity="0.7" />
+  <circle cx="75" cy="325" r="15" fill="#2e2eff" opacity="0.7" />
+  <circle cx="325" cy="325" r="15" fill="#1ab394" opacity="0.7" />
+</svg>
